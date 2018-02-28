@@ -9,6 +9,7 @@
       = MarkdownHelper.markdown(@article.article_body)
 
     %aside
+      = link_to 'Download as PDF', article_path(article_id: @article.graph_id, pdf: true), class: 'btn--primary'
       - if @related_articles
         .block.theme--grey-4
           %h2= 'Related Articles'

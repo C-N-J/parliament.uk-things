@@ -1,0 +1,10 @@
+!!!
+%html
+  %head
+    %title Article
+    = csrf_meta_tags
+    = wicked_pdf_stylesheet_link_tag('articles/pdf')
+  %body
+    %h1= article.title
+    = MarkdownHelper.markdown(article.summary)
+    = MarkdownHelper.markdown(article.body)
