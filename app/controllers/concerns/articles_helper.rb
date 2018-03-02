@@ -4,7 +4,7 @@ module ArticlesHelper
       pdf:      article.title,
       template: 'articles/pdf.html.haml',
       locals:   { article: article },
-      layout:   false,
+      layout:   true,
       encoding: 'UTF-8'
     )
   end
