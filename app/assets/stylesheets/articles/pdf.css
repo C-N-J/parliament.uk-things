@@ -1,3 +1,19 @@
 body {
-    background-color: lightblue;
+  background-color: #FFFFFF;
+}
+
+p, li {
+  page-break-inside: avoid;
+}
+
+
+/**
+ * Styles for default layout page
+ * hiding the irrelevant elements
+ */
+#cookie,
+.status--banner,
+body > header .search__global,
+body > footer {
+  display: none;
 }
