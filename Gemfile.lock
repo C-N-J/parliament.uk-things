@@ -1,3 +1,15 @@
+GIT
+  remote: https://www.github.com/C-N-J/parliament_lda_client.git
+  revision: 02e56d43c5ace0bf829ee9a30c669b73923adb65
+  specs:
+    parliament_lda_client (0.1.0)
+      typhoeus (~> 1.3)
+
+PATH
+  remote: ../parliament.uk-routes
+  specs:
+    parliament-routes (0.7.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -141,7 +153,6 @@ GEM
     parliament-grom-decorators (0.23.0)
     parliament-ntriple (0.3.0)
       grom (~> 0.5)
-    parliament-routes (0.6.1)
     parliament-ruby (1.0.0.pre6)
       typhoeus (~> 1.3)
     parliament-utils (0.7.3)
@@ -308,9 +319,10 @@ DEPENDENCIES
   parallel_tests
   parliament-grom-decorators (~> 0.23)
   parliament-ntriple (~> 0.2)
-  parliament-routes (~> 0.6)
+  parliament-routes!
   parliament-ruby (= 1.0.0.pre6)
   parliament-utils (~> 0.6)
+  parliament_lda_client!
   pugin (~> 1.6)
   puma (~> 3.10.0)
   rack-rewrite

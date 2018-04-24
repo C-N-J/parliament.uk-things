@@ -1,0 +1,9 @@
+%h2= @briefing.title
+%h4= @briefing.created
+%h4= @briefing.library
+= @briefing.summary
+
+- @briefing.topics.each do |topic|
+  = topic
+
+

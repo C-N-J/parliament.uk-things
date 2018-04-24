@@ -23,7 +23,10 @@ gem 'parliament-grom-decorators', '~> 0.23'
 gem 'geosparql_to_geojson', '~> 0.2'
 
 # Parliament routing
-gem 'parliament-routes', '~> 0.6'
+#gem 'parliament-routes', '~> 0.6'
+gem 'parliament-routes', path: '../parliament.uk-routes'
+
+gem 'parliament_lda_client', git: 'https://www.github.com/C-N-J/parliament_lda_client.git'
 
 # Parliament-Utils gem for generic set up and configuration
 gem 'parliament-utils', '~> 0.6', require: false
